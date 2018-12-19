@@ -65,6 +65,7 @@ ws.onreconnect = () => {
 - Accepts `Number or String`
 - Default: `ping`
 
+
 #API
 
 ###onclose
