@@ -18,19 +18,30 @@
                 endTime: endTime
             }
             this.ws = null
+            this.onclose = () => {}
+            this.onerror = () => {}
+            this.onopen = () => {}
+            this.onmessage = () => {}
+            this.onreconnect = () => {}
             this.websocketInit()
+            window.onbeforeunload = () => {
+                if (this.ws) {
+                    this.ws.close()
+                }
+            }
         }
         websocketInit () {
             try {
                 this.ws = new WebSocket(this.options.url)
-                this.initEventHandle()
+                this.websocketListen()
             } catch (e) {
                 this.websocketReconnect()
+                throw e
             }
         }
         websocketListen () {
             this.ws.onopen = () => {
-                this.open()
+                this.onopen()
                 this.heartCheck()
             }
             this.ws.onmessage = (e) => {
@@ -47,8 +58,9 @@
             }
         }
         websocketReconnect () {
-            if(this.options.endTime || this.endReconnect) return
+            if(this.endReconnect || this.options.endTime) return
             this.endReconnect = true
+            this.onreconnect()
             setTimeout(() => {
                 this.websocketInit()
                 this.endReconnect = false
