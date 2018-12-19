@@ -4,7 +4,7 @@
     } else if (typeof module !== 'undefined' && module.exports){
         module.exports = factory();
     } else {
-        global.ReconnectingWebSocket = factory();
+        global.WebsocketComplete = factory();
     }
 })(this, function () {
     // function ReconnectingWebSocket(url, protocols, options) {
@@ -29,7 +29,7 @@
                 this.ws = new WebSocket(this.options.url)
                 this.initEventHandle()
             } catch (e) {
-                this.reconnect()
+                this.websocketReconnect()
             }
         }
         websocketListen () {
@@ -84,6 +84,5 @@
             this.ws.close();
         }
     }
-
     return WebsocketComplete
 })
