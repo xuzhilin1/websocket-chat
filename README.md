@@ -67,34 +67,34 @@ ws.onreconnect = () => {
 
 ---
 
-##API
+## API
 
-###onclose
+### onclose
 ```javascript
 WebsocketComplete.onopen = () => {
     console.log('连接成功')
 }
 ```
 
-###onerror
+### onerror
 ```javascript
 WebsocketComplete.onerror = () => {
     console.log('连接失败')
 }
 
-###onclose
+### onclose
 ```javascript
 WebsocketComplete.onclose = () => {
     console.log('连接断开')
 }
 
-###onmessage
+### onmessage
 ```javascript
 WebsocketComplete.onmessage = () => {
     console.log('获取消息')
 }
 
-###onreconnect
+### onreconnect
 ```javascript
 WebsocketComplete.onreconnect = () => {
     console.log('重新连接')
