@@ -7,10 +7,6 @@
         global.WebsocketComplete = factory();
     }
 })(this, function () {
-    // function ReconnectingWebSocket(url, protocols, options) {
-    //
-    // }
-    // return ReconnectingWebSocket;
     class WebsocketComplete {
         constructor({url,pingChat = 'ping',pingTime = 20000,pongTime = 2000,reconnetTime = 2000,endTime = false}) {
             this.options = {
