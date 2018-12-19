@@ -4,7 +4,7 @@ const config = {
         index: './index.js'
     },
     output: {
-        filename: 'index.js',
+        filename: 'index.min.js',
         path: path.resolve(__dirname, 'dist'),
         libraryTarget: 'umd',
         umdNamedDefine: true

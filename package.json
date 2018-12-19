@@ -1,8 +1,8 @@
 {
   "name": "websocket-heartbeat-reconnection",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Support heartbeat + reconnection mechanism",
-  "main": "./dist/index.js",
+  "main": "./index.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack --watch --progress --color"
