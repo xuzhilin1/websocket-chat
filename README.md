@@ -81,12 +81,14 @@ WebsocketComplete.onopen = () => {
 WebsocketComplete.onerror = () => {
     console.log('连接失败')
 }
+```
 
 ### onclose
 ```javascript
 WebsocketComplete.onclose = () => {
     console.log('连接断开')
 }
+```
 
 ### onmessage
 ```javascript
@@ -99,3 +101,4 @@ WebsocketComplete.onmessage = () => {
 WebsocketComplete.onreconnect = () => {
     console.log('重新连接')
 }
+```
