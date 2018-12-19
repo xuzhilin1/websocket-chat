@@ -66,7 +66,7 @@ ws.onreconnect = () => {
 - Default: `ping`
 
 
-#API
+##API
 
 ###onclose
 ```javascript
