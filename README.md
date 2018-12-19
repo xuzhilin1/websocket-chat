@@ -95,6 +95,7 @@ WebsocketComplete.onclose = () => {
 WebsocketComplete.onmessage = () => {
     console.log('获取消息')
 }
+```
 
 ### onreconnect
 ```javascript
