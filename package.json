@@ -1,24 +1,46 @@
 {
-  "name": "websocket-test-xzl",
+  "name": "websocket-heartbeat-reconnection",
   "version": "1.0.0",
-  "description": "this is tim",
+  "description": "Support heartbeat + reconnection mechanism",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch --progress --color"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/xuzhilin1/Tim.git"
   },
   "keywords": [
-    "tim",
-    "and",
-    "websocket"
+    "websocket",
+    "heartbeat",
+    "reconnection",
+    "communication"
   ],
   "author": "xuzhilin",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/xuzhilin1/Tim/issues"
   },
-  "homepage": "https://github.com/xuzhilin1/Tim#readme"
+  "homepage": "https://github.com/xuzhilin1/Tim#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.2.0",
+    "conventional-changelog-cli": "^2.0.5",
+    "eslint": "^5.6.1",
+    "mocha": "^5.2.0",
+    "mocha-phantomjs": "^4.1.0",
+    "phantomjs-prebuilt": "^2.1.16",
+    "pre-commit": "^1.2.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": []
+  }
 }
