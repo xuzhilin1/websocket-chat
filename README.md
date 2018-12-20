@@ -45,22 +45,22 @@ ws.onreconnect = () => {
 - This is the URL of websocket
 - Accepts `String`
 
-#### `pingTimeout`
+#### `pingTime`
 - This is the websocket heartbeat protocol time.
 - Accepts `Number`
 - Default: `20000`
 
-#### `pongTimeout`
+#### `pongTime`
 - This is the timeout time for unreceived messages after websocket pings.
 - Accepts `Number`
 - Default: `2000`
 
-#### `reconnectTimeout`
+#### `reconnetTime`
 - This is the websocket reconnect time.
 - Accepts `Number`
 - Default: `2000`
 
-#### `pingMsg`
+#### `pingChat`
 - This is the ping value for websocket transfers.
 - Accepts `Number or String`
 - Default: `ping`
