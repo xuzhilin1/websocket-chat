@@ -61,6 +61,7 @@
             if(this.endReconnect || this.options.endTime) return
             this.endReconnect = true
             this.onreconnect()
+            this.ws.close()
             setTimeout(() => {
                 this.websocketInit()
                 this.endReconnect = false
