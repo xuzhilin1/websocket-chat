@@ -26,7 +26,7 @@
             this.websocketInit()
             window.onbeforeunload = () => {
                 if (this.ws) {
-                    this.ws.close()
+                    this.close()
                 }
             }
         }
